@@ -1,3 +1,5 @@
+<!-- https://www.fareez.info/blog/windows-phone-tiles-using-css-and-jquery/ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,22 +7,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
     <title>Windows Phone Style Portfolio</title>
 </head>
 <body>
-    <section class="grid-container-parent">
-    <div class="grid-container">
-        <img src="https://picsum.photos/400" alt="" id="#1">
-        <img src="https://picsum.photos/400" alt="" id="#2">
-        <img src="https://picsum.photos/400" alt="" id="#3">
-        <img src="https://picsum.photos/400" alt="" id="#4">
-        <img src="https://picsum.photos/200/400" alt="" id="#5">
-        <img src="https://picsum.photos/400" alt="" id="#6">
-        <img src="https://picsum.photos/200/400" alt="" id="#7">
-        <img src="https://picsum.photos/400" alt="" id="#8">
-        <img src="https://picsum.photos/400" alt="" id="#9">
-        <img src="https://picsum.photos/400" alt="" id="#10">
+    <div class="container">
+        <div class="tile tile-normal">
+            <div class="front">
+                <img src="https://picsum.photos/400" alt="" id="#1">
+            </div>
+           <div class="back">
+                Micael 
+                Santos
+           </div>
+        </div>
+        <div class="container-small">
+            <div class="tile tile-small">
+                <div class="front">
+                    <img src="https://picsum.photos/400" alt="" id="#2">
+                </div>
+                <div class="back">Tile 1</div>
+            </div>
+            <div class="tile tile-small">
+                <div class="front">
+                    <img src="https://picsum.photos/400" alt="" id="#3">
+                </div>
+                <div class="back">Tile 2</div>
+            </div>
+            <div class="tile tile-small">
+                <div class="front">
+                    <img src="https://picsum.photos/400" alt="" id="#4">
+                </div>
+                <div class="back">Tile 3</div>
+            </div>
+            <div class="tile tile-small">
+                <div class="front">
+                    <img src="https://picsum.photos/200/400" alt="" id="#5">
+                </div>
+                <div class="back">Tile 4</div>
+            </div>
+        </div>
+        <div class="tile tile-wide">
+            <div class="front">
+                <img src="https://picsum.photos/400/600" alt="" id="#10">
+            </div>
+            <div class="back">
+               This is a wide tile
+            </div>
+        </div>
     </div>
-    </section>
 </body>
 </html>
+
